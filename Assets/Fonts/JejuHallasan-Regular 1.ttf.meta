@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 75bbc87d177dbef40940441b8657af8f
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - JejuHallasan
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 32a68c0e33d891b4b8c56c7e49319558, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
