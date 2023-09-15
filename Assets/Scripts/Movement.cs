@@ -1,39 +1,27 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class Movement : MonoBehaviour
 {
     public float speed = 5.0f;
-
     private Rigidbody rb;
-    private Vector2 moveInput;
 
-    private void Awake()
+    private void Start()
     {
         rb = GetComponent<Rigidbody>();
     }
 
     private void Update()
     {
-        ReadInput();
-    }
+        float horizontalInput = Input.GetAxisRaw("Horizontal");
+        float verticalInput = Input.GetAxisRaw("Vertical");
 
-    private void FixedUpdate()
-    {
-        ApplyMovement();
-    }
+        // Create a movement vector based on input.
+        Vector3 direction = transform.forward * verticalInput + transform.right * horizontalInput;
 
-    private void ReadInput()
-    {
-        moveInput = new Vector2(
-            Keyboard.current.aKey.isPressed ? -1f : Keyboard.current.dKey.isPressed ? 1f : 0f,
-            Keyboard.current.sKey.isPressed ? -1f : Keyboard.current.wKey.isPressed ? 1f : 0f
-        );
-    }
+        // Apply the speed to the movement vector.
+        Vector3 velocity = direction.normalized * speed * Time.deltaTime;
 
-    private void ApplyMovement()
-    {
-        Vector3 movement = transform.forward * moveInput.y + transform.right * moveInput.x;
-        rb.velocity = movement * speed;
+        // Set the velocity of the Rigidbody.
+        rb.velocity = velocity;
     }
 }
