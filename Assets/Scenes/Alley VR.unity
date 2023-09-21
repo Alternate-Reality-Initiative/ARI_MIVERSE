@@ -3624,7 +3624,6 @@ GameObject:
   - component: {fileID: 252513383}
   - component: {fileID: 252513386}
   - component: {fileID: 252513385}
-  - component: {fileID: 252513384}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -3647,19 +3646,6 @@ Transform:
   m_Father: {fileID: 379331850}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &252513384
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 252513382}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &252513385
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5496,6 +5482,7 @@ GameObject:
   - component: {fileID: 379331853}
   - component: {fileID: 379331852}
   - component: {fileID: 379331851}
+  - component: {fileID: 379331855}
   m_Layer: 0
   m_Name: LeftHand Controller
   m_TagString: Untagged
@@ -6005,6 +5992,19 @@ MonoBehaviour:
     m_Reference: {fileID: 7779212132400271959, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_ButtonPressPoint: 0.5
+--- !u!135 &379331855
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379331849}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.077
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &386433310
 GameObject:
   m_ObjectHideFlags: 0
