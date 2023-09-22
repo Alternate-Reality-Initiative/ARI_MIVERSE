@@ -5483,6 +5483,7 @@ GameObject:
   - component: {fileID: 379331852}
   - component: {fileID: 379331851}
   - component: {fileID: 379331855}
+  - component: {fileID: 379331856}
   m_Layer: 0
   m_Name: LeftHand Controller
   m_TagString: Untagged
@@ -6005,6 +6006,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.077
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &379331856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379331849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c0d1e6065770b24fa3dd7cdef6e29c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 379331854}
 --- !u!1 &386433310
 GameObject:
   m_ObjectHideFlags: 0
@@ -8768,7 +8782,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 8702058dbaedeb942b92ba1636eaaaae, type: 2}
+      objectReference: {fileID: 2100000, guid: 80b0bb5d57458cb4fa53dd126bd985d5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc320386f291c0243a77caa6188f4db8, type: 3}
 --- !u!1 &582712530 stripped
